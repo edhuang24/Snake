@@ -1,0 +1,76 @@
+body {
+  font-family: sans-serif;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: inherit;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+}
+
+strong {
+  color: red;
+}
+
+div.snake-game {
+  width: inherit;
+  height: inherit;
+  border: 1px solid black;
+  margin-bottom: 40px;
+}
+
+ul {
+  display: block;
+  width: inherit;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+li {
+  float: left;
+  display: block;
+  width: 2px;
+  height: 2px;
+  margin: 9px;
+  background: black;
+  /*border: 1px solid black;*/
+}
+
+li.apple {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  /*background-image: url('apple.png')*/
+  /*background-size: cover;*/
+  border-radius: 10px;
+}
+
+li.snake {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  border-radius: 0px;
+}
