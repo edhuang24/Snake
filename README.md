@@ -6,4 +6,5 @@
 
 ![demo]
 
+Demo GIF:
 [demo]: ./demo_video.gif
