@@ -10,5 +10,6 @@ W A S D keys to move
 Spacebar to pause
 
 Demo GIF:
+
 ![demo]
 [demo]: ./demo_video.gif
