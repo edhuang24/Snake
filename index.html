@@ -6,22 +6,32 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <h1>Snake</h1>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="./underscore.js"></script>
     <script type="text/javascript" src="./snake.js"></script>
     <script type="text/javascript" src="./snake-view.js"></script>
     <script type="text/javascript" src="./board.js"></script>
+    <h1>Snake</h1>
 
-    <div class="snake-game"></div>
+    <div class="snake-game">
+      <div class="start-msg">Press S to start the game!</div>
+    </div>
 
     <h2>Eat as many red apples as you can!</h2>
     <h2>W-A-S-D: move</h2>
     <h2>P: pause</h2>
 
     <script type="text/javascript">
-      var board = new Board(20);
-      var view = new View(board, $("div.snake-game"));
+      $(window).one('keydown', this.startGame.bind(this));
+
+      function startGame(e) {
+        e.preventDefault();
+        if (e.keyCode === 83) {
+          $('div.snake-game').empty();
+          var board = new Board(20);
+          var view = new View(board, $('div.snake-game'));          
+        }
+      }
     </script>
   </body>
 </html>

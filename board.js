@@ -10,7 +10,6 @@
 
   Board.setupGrid = function(dim){
     var grid = new Array(dim);
-
     for (var i = 0; i < grid.length; i++) {
       grid[i] = new Array(dim);
     }
